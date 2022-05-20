@@ -1,0 +1,16 @@
+
+1)
+https://www.strava.com/oauth/authorize?client_id=84840&redirect_uri=http://localhost&response_type=code&scope=activity:read_all
+
+
+2) POST
+https://www.strava.com/oauth/token?client_id=84840&client_secret=976dae9212ea8a1a62a74ee617201a80343d57ee&code=df2878c86c2df03d5d1d92355d0adf05dd566dc5&grant_type=authorization_code
+
+3) POST
+https://www.strava.com/oauth/token?client_id=84840&client_secret=976dae9212ea8a1a62a74ee617201a80343d57ee&refresh_token=c3c57a4316f9d708858ecd2a5c2315d8e0251c0a&grant_type=refresh_token
+
+4) View Activities using access token from above steps
+GET
+https://www.strava.com/api/v3/athlete/activities?access_token=9bfafc5d39d623181e63d3849677bb137bcf1387
+
+https://www.youtube.com/watch?v=2FPNb1XECGs&list=PLO6KswO64zVvcRyk0G0MAzh5oKMLb6rTW&index=4
